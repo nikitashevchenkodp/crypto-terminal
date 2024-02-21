@@ -1,4 +1,4 @@
-name: Build and Deploy  to S3 and CloudFront
+name: Build and Deploy NextJS App to S3 and CloudFront
 on:
   push:
     branches: [main]
@@ -13,7 +13,7 @@ jobs:
 
     env:
       NEXTJS_DIST: out
-      AWS_REGION: us-east-1
+      AWS_REGION: eu-north-1
       S3_BUCKET: crypto-terminal-sheff
       CLOUDFRONT_DISTRIBUTION_ID: E3F30CVO44CP6N
 
