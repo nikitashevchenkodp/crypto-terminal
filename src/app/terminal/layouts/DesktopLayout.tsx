@@ -1,4 +1,4 @@
-import { MyPositions, PairTransactions, TokenInfo, TradePanel } from '@/app/modules';
+import { MyPositions, PairTransactions, TokenInfo, TradePanel } from '@/modules';
 import React from 'react';
 
 export const DesktopLayout = () => {
