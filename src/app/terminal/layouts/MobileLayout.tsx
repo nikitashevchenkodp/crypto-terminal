@@ -21,7 +21,7 @@ export const MobileLayout = () => {
             <TradeChart />
           </div>
         </TabsContent>
-        <TabsContent value="info" className="flex-1">
+        <TabsContent value="inTabsContentfo" className="flex-1">
           <div className="h-full">
             <MyPositions />
           </div>

@@ -1,4 +1,4 @@
-import { MyPositions, PairTransactions, TokenInfo, TradePanel } from '@/modules';
+import { MyPositions, PairTransactions, TokenInfo, TradeChart, TradePanel } from '@/modules';
 import React from 'react';
 
 export const DesktopLayout = () => {
@@ -15,7 +15,7 @@ export const DesktopLayout = () => {
       <div className="w-9/12">
         <div className="w-full h-2/3 border-b flex">
           <div className="w-8/12 border-r">
-            <TradePanel />
+            <TradeChart />
           </div>
           <div className="w-4/12">
             <PairTransactions />
