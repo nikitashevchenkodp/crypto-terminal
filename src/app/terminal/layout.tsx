@@ -9,11 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="flex flex-col w-screen h-screen">
-          <Header />
-          <main className="flex flex-1 ">{children}</main>
-        </div>
+      <body className="flex flex-col w-screen h-screen relative">
+        <Header />
+        <main className="flex h-[calc(100vh-48px)]">{children}</main>
       </body>
     </html>
   );

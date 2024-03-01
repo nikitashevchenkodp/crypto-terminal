@@ -7,8 +7,8 @@ import React from 'react';
 
 export const TradePanel = () => {
   return (
-    <div className="text-muted-foreground p-2">
-      <Tabs>
+    <div className="p-2">
+      <Tabs defaultValue="buy">
         <TabsList className="w-full rounded p-0 h-auto bg-transparent border">
           <TabsTrigger
             className="flex-1 rounded-none rounded-l bg-transparent data-[state=active]:bg-primary data-[state=active]:text-black"
@@ -41,28 +41,28 @@ export const TradePanel = () => {
             <div className="flex flex-col gap-3 mb-3">
               <Label>Send</Label>
               <Input />
-              <Tabs>
+              <Tabs defaultValue="0.1">
                 <TabsList className="w-full bg-transparent border p-0 h-auto">
                   <TabsTrigger
-                    className="flex-1 rounded-none rounded-r bg-transparent data-[state=active]:bg-destructive"
+                    className="flex-1 rounded-none rounded-l bg-transparent data-[state=active]:bg-primary data-[state=active]:text-black"
                     value="0.1"
                   >
                     0.1
                   </TabsTrigger>
                   <TabsTrigger
-                    className="flex-1 rounded-none rounded-r bg-transparent data-[state=active]:bg-destructive"
+                    className="flex-1 rounded-none  bg-transparent data-[state=active]:bg-primary data-[state=active]:text-black"
                     value="0.2"
                   >
                     0.2
                   </TabsTrigger>
                   <TabsTrigger
-                    className="flex-1 rounded-none rounded-r bg-transparent data-[state=active]:bg-destructive"
+                    className="flex-1 rounded-none  bg-transparent data-[state=active]:bg-primary data-[state=active]:text-black"
                     value="sell"
                   >
                     0.5
                   </TabsTrigger>
                   <TabsTrigger
-                    className="flex-1 rounded-none rounded-r bg-transparent data-[state=active]:bg-destructive"
+                    className="flex-1 rounded-none rounded-r bg-transparent data-[state=active]:bg-primary data-[state=active]:text-black"
                     value="1"
                   >
                     1

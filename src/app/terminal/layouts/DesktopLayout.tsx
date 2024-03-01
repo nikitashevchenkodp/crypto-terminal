@@ -17,7 +17,7 @@ export const DesktopLayout = () => {
           <div className="w-8/12 border-r">
             <TradeChart />
           </div>
-          <div className="w-4/12">
+          <div className="w-4/12 overflow-hidden">
             <PairTransactions />
           </div>
         </div>

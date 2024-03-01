@@ -4,36 +4,39 @@ import React from 'react';
 
 export const MobileLayout = () => {
   return (
-    <div className="md:hidden w-full flex flex-col">
-      <Tabs defaultValue="trade" className="w-full flex-1 flex flex-col">
-        <TabsContent value="trade" className="flex-1 ">
-          <div className="h-full">
-            <div className="border-b h-1/2">
-              <TradePanel />
-            </div>
-            <div className="h-1/2">
-              <PairTransactions />
-            </div>
+    <div className="md:hidden h-full w-full flex flex-col relative">
+      <Tabs defaultValue="trade" className="w-full relative h-full">
+        <TabsContent value="trade" className="overflow-y-auto h-[calc(100%-32px)] m-0">
+          <div className="border-b h-auto">
+            <TradePanel />
+          </div>
+          <div className="h-96">
+            <PairTransactions />
           </div>
         </TabsContent>
-        <TabsContent value="chart" className="flex-1">
-          <div className="h-full">
-            <TradeChart />
-          </div>
+        <TabsContent value="chart" className="overflow-y-auto  h-[calc(100%-32px)] m-0">
+          <TradeChart />
         </TabsContent>
-        <TabsContent value="inTabsContentfo" className="flex-1">
-          <div className="h-full">
-            <MyPositions />
-          </div>
+        <TabsContent value="info" className="overflow-y-auto h-[calc(100%-32px)] m-0">
+          <MyPositions />
         </TabsContent>
-        <TabsList className="w-full">
-          <TabsTrigger className="flex-1" value="trade">
+        <TabsList className="w-full sticky bottom-0 rounded-none p-0 h-8">
+          <TabsTrigger
+            className="flex-1 rounded-none data-[state=active]:bg-primary data-[state=active]:text-black"
+            value="trade"
+          >
             Trade
           </TabsTrigger>
-          <TabsTrigger className="flex-1" value="chart">
+          <TabsTrigger
+            className="flex-1 rounded-none data-[state=active]:bg-primary data-[state=active]:text-black"
+            value="chart"
+          >
             Chart
           </TabsTrigger>
-          <TabsTrigger className="flex-1" value="info">
+          <TabsTrigger
+            className="flex-1 rounded-none data-[state=active]:bg-primary data-[state=active]:text-black"
+            value="info"
+          >
             Info
           </TabsTrigger>
         </TabsList>
